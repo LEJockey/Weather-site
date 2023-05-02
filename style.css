@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-col : #fff;
+    --sec-col : #009ad8;
+    --offWhite-col : #bfc1c8;
+}
+
+body {
+    line-height: 1.5;
+}
+
+
+/* Navbar Styling */
+
+header img {
+    margin-right: 10px;
+}
+header h1 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+
+}
+
+header .small {
+    font-size: .9rem;
+    color: var(--offWhite-col);
+}
+
+header ul li {
+    margin-left: 30px;
+}
+
+header .navbar-nav .nav-link {
+    color: var(--main-col);
+    padding: 5px 25px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all 0.3s ;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link  {
+    color: var(--sec-col);
+}
+
+header .navbar-nav .nav-link:focus,header .navbar-nav .nav-link:hover {
+    color: var(--sec-col);
+    border-color: var(--sec-col);
+    border-radius: 30px;
+    padding: 5px 25px;
+    font-weight: 400;
+}
+
+header .navbar-toggler{
+    background-color: #212529;
+    border-color: var(--sec-col);
+    color: var(--sec-col);
+    padding: 10px;
+}
+header .navbar-toggler .openbtn{
+    color: var(--sec-col);
+    width: 35px;
+    display: inline-block;
+}
+
+
+/* Search Input Styling */
+.search-about-location {
+    padding: 70px 0;
+    background-image: url(images/banner.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 350px
+}
+
+.search-about-location .searchLocationInput {
+    border-radius: 30px;
+    padding: 20px 50px 20px 20px;
+    border: none;
+    font-size: 14px;
+    color: var(--main-col);
+}
+
+.search-about-location .searchBtn {
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: var(--sec-col);
+    border-radius: 30px;
+    padding: 10px 35px;
+    color: var(--main-col);
+    /* border: none; */
+}
+
+
+/* Weather Table Styling */
+.weather-table .weather-container {
+    margin-top: -150px;
+    margin-bottom: 50px;
+    border-radius: 10px; 
+    overflow: hidden;
+    background-color: #323544;
+}
+.weather-table .weather-container .table-today-head , .table-next-head {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.weather-table .weather-container .table-today-head .day , .date , .weather-table .weather-container .table-next-head .next-day , .next-date{
+    color: var(--offWhite-col);
+    font-size: 14px;
+}
+.weather-table .weather-container .table-today-content {
+    padding: 30px 20px;
+}
+
+.weather-table .weather-container .table-today-content .location {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--offWhite-col);
+}
+
+.weather-table .weather-container .table-today-content .num {
+    font-size: 5.625rem;
+    font-weight: 700;
+    color: var(--main-col);
+    margin-right: 30px;
+}
+
+.weather-table .weather-container .table-today-content .description {
+    margin: 20px 0;
+    color: var(--sec-col);
+    font-size: 14px;
+}
+
+.weather-table .weather-container .table-today-content span {
+    /* margin-right: 1rem; */
+    font-size: 14px;
+    color: var(--offWhite-col)
+}
+
+.weather-table .weather-container .nextDayTable {
+    background-color: #262936;
+}
+
+.weather-table .weather-container .nextDayTable .table-next-content {
+    padding: 50px 20px 10px;
+    text-align: center;
+}
+
+.weather-table .weather-container .nextDayTable .table-next-content .dayTemp {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--main-col);
+}
+
+.weather-table .weather-container .nextDayTable .table-next-content .nightTemp {
+    font-size: 1rem;
+    color: var(--offWhite-col);
+}
+
+.weather-table .weather-container .table-next-content .description {
+    margin: 20px 0;
+    color: var(--sec-col);
+    font-size: 14px;
+}
+
+
+
+/* Footer Styling */
+footer {
+    background-color: #262936;
+}
+
+footer input {
+    border-radius: 30px;
+    padding: 20px 50px 20px 20px;
+    border: none;
+    font-size: 14px;
+    color: var(--main-col);
+}
+footer button {
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    background-color: var(--sec-col);
+    border-radius: 30px;
+    border-color: transparent;
+    padding: 10px 20px;
+    color: var(--main-col);
+}
+
+
+footer .social-links a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: var(--sec-col);
+    text-align: center;
+    line-height: 2;
+    transition: all 0.3s ease;
+    font-size: 20px;   
+}
+footer .social-links a:hover {
+    color: var(--main-col);
+    background: var(--sec-col);
+}
+
+footer p {
+    font-size: .875rem;
+    color: var(--offWhite-col);
+}
+
+
+
+
+
+
+

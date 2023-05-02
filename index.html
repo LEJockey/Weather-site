@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bs-css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body class="bg-dark">
+
+    <!-- navbar  -->
+    <header class="py-5">
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div href="" class="d-flex align-items-center text-decoration-none">
+                        <img src="images/logo@2x.png" alt="Logo" width="64" height="38">
+                        <div class="brandDetalis d-inline-block">
+                            <h1 class="text-white mb-0">Weather</h1>
+                            <small class="small">Created by LeJockey</small>
+                        </div>
+                    </div>
+                </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="openbtn fs-2">☰ </span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  navbar-dark ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Livecameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-about-location">
+        <div class="container px-0">
+            <form class="find-location position-relative">
+                <input class="searchLocationInput bg-dark w-100 " type="text" placeholder="Find your location..." id="search">
+                <button class="btn searchBtn position-absolute">Find</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- weather display Section -->
+    <section class="weather-table">
+        <div class="container">
+            <div class="weather-container row ">
+                <div class="todayTable col-lg-4 px-0">
+                    <div class="table-today-head d-flex justify-content-between align-items-center">
+                        <div class="day"></div>
+                        <div class=" date"></div>
+                    </div>
+                    <div class="table-today-content">
+                        <div class="location"></div>
+                        <div class="temp">
+                            <div class="num"></div>
+                            <div class="today-icon">
+                                <img src="" alt="" width="90">
+                            </div>	                       
+                        </div>
+                        <div class="description"></div>
+                        <div class="row">
+                            <div class="col-4">
+                                <p><img class="me-1" src="images/icon-umberella.png" alt=""><span class="humidity"></span></p>
+                            </div>
+                            <div class="col-4 px-0">
+                                <p><img class="me-1"src="images/icon-wind.png" alt=""><span class="wind"></span></p>
+                            </div>
+                            <div class="col-4">
+                                <p><img img class="me-1"src="images/icon-compass.png" alt=""><span class="compass"></span></p>
+                            </div>
+                        </div>                      
+                    </div>
+                </div>
+                <div class="nextDayTable col-lg-4 bg-dark px-0">
+                    <div class="table-next-head d-flex justify-content-between align-items-center">
+                        <div class="next-day"></div>
+                        <div class="next-date"></div>                        
+                    </div>
+                    <div class="table-next-content">
+                        <div class="next-icon mb-4">
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                        </div>
+                        <div class="dayTemp"></div>
+                        <small class="nightTemp"></small>
+                        <div class="description"></div>
+                    </div>
+                </div>                
+                <div class="nextDayTable col-lg-4 px-0">
+                    <div class="table-next-head d-flex justify-content-between align-items-center">
+                        <div class="next-day"></div> 
+                        <div class="next-date"></div>                     
+                    </div>
+                    <div class="table-next-content">
+                        <div class="next-icon mb-4">
+                            <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" width="48">
+                        </div>
+                        <div class="dayTemp"></div>
+                        <small class="nightTemp"></small>
+                        <div class="description"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <form class="subscribeForm position-relative">
+                        <input class="searchLocationInput bg-dark w-100 " type="text" placeholder="Enter your email to subscribe" id="subscribe">
+                        <button class="subscribe position-absolute">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-lg-3 offset-lg-1">
+                    <div class="social-links">
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <p class="my-3">Copyright 2023. Designed by LeJockey. All rights reserved</p>
+        </div>
+    </footer>
+
+
+    <script src="bs-js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
